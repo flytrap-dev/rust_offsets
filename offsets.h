@@ -458,6 +458,7 @@ namespace offsets
         inline constexpr uintptr_t display_name                     = 0x4A8; // string  [was %0a096636d8216a4f1252ca5de44595d63ad5ec72]
         inline constexpr uintptr_t PlayerEyes                       = 0x4F8; // %f37fbc7dfcab79e09d81b6365eb8c8c77764e6ce<PlayerEyes>  [was %a98a42b5bfc536d8e66ba456f98a91fb16069824]
         inline constexpr uintptr_t Belt                             = 0x528; // %a6ab44fbdf1031e9e0957cb3a83abf180da1ab4e  [was %e0a809c8b35d544b4af710d85c4f4f962d0d05c0]
+        inline constexpr uintptr_t currentTeam                      = 0x538; // ulong
         inline constexpr uintptr_t clActiveItem                     = 0x568; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<%d01902b3c69e709006b588284a444fa3349c0090>  [was %c928b0dcec5bddd75df60086a11b6a8387ef5b67]
         inline constexpr uintptr_t mounted                          = 0x5C0; // %1553e99a8b8d2f529bd3785bed0b32ce9e12df25  [was %098b222d3451c86339bbd570e8ab4f79a25e4478]
         inline constexpr uintptr_t playerFlags                      = 0x6B8; // BasePlayer.PlayerFlags
