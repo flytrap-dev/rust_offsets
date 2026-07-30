@@ -164,6 +164,8 @@ namespace offsets
         // instance fields
         inline constexpr uintptr_t ignoreDamageFromOutside          = 0x3D4; // bool
         inline constexpr uintptr_t mountPoints                      = 0x3E0; // List<BaseVehicle.MountPointInfo>
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t shouldShowHudHealth              = 0x3A2; // offset
     }
 
     // BaseEntity  (TypeDefIndex: 354)
@@ -175,6 +177,8 @@ namespace offsets
         inline constexpr uintptr_t bounds                           = 0x17C; // Bounds
         inline constexpr uintptr_t model                            = 0x1A8; // Model
         inline constexpr uintptr_t flags                            = 0x1B0; // BaseEntity.Flags
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t position                         = 0x0; // offset
     }
 
     // ItemIcon  (TypeDefIndex: 617)
@@ -184,6 +188,11 @@ namespace offsets
         inline constexpr uintptr_t static_fields  = 0xB8;
         // instance fields
         inline constexpr uintptr_t backgroundImage                  = 0xE8; // Image
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t item_icon_c                      = 0xFC0CFA0; // offset
+        inline constexpr uintptr_t containerLootStartTimes          = 0x0; // offset
+        inline constexpr uintptr_t TryToMove                        = 0x0; // offset
+        inline constexpr uintptr_t RunTimedAction                   = 0x0; // offset
     }
 
     // CollectibleEntity  (TypeDefIndex: 806)
@@ -235,6 +244,10 @@ namespace offsets
         inline constexpr uintptr_t hostileScore                     = 0x29C; // float
         inline constexpr uintptr_t viewModel                        = 0x2C8; // ViewModel  [was %c31f5ce68268507460d9cf80ea29210964a6567e]
         inline constexpr uintptr_t ownerItemUID                     = 0x2D0; // %d01902b3c69e709006b588284a444fa3349c0090  [was %de372cd8d6ca4140de1c87c91e4b5aaf3e7c37d3]
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t worldModelAnimation              = 0x208; // offset
+        inline constexpr uintptr_t viewModel_wrapper_kind           = 0x4; // offset
+        inline constexpr uintptr_t viewModel_inner_off              = 0x28; // offset
     }
 
     // CompoundBowWeapon  (TypeDefIndex: 1451)
@@ -249,6 +262,8 @@ namespace offsets
     {
         // instance fields
         inline constexpr uintptr_t RendererList                     = 0x50; // List<Renderer>  [was %885917d298102537a48ff117c7bc8472084567a8]
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t Renderers                        = 0x50; // offset
     }
 
     // OreResourceEntity  (TypeDefIndex: 1586)
@@ -273,6 +288,8 @@ namespace offsets
         inline constexpr uintptr_t markAttackerHostile              = 0x29E; // bool
         inline constexpr uintptr_t _health                          = 0x2A4; // float  [was %1f6155d561c5eeb867629155251e106c9a9fef2a]
         inline constexpr uintptr_t _maxHealth                       = 0x2A8; // float  [was %1b56ef8a12b0eaa48cea062ad386dce35cba1928]
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t model                            = 0x1A8; // offset
     }
 
     // ResourceEntity  (TypeDefIndex: 2329)
@@ -300,6 +317,24 @@ namespace offsets
         inline constexpr uintptr_t prefabID                         = 0x54; // uint
         inline constexpr uintptr_t globalBroadcast                  = 0x58; // bool
         inline constexpr uintptr_t networkRange                     = 0x64; // EntityNetworkRange
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t base_networkable                 = 0xFBF37A0; // offset
+        inline constexpr uintptr_t wrapper_class_ptr                = 0x8; // offset
+        inline constexpr uintptr_t parent_static_fields             = 0x10; // offset
+        inline constexpr uintptr_t hv_offset                        = 0x18; // offset
+        inline constexpr uintptr_t entities                         = 0x20; // offset
+        inline constexpr uintptr_t buffer_list_array                = 0x10; // offset
+        inline constexpr uintptr_t buffer_list_size                 = 0x18; // offset
+        inline constexpr uintptr_t client_entities_decryption       = 0x1204220; // offset
+        inline constexpr uintptr_t entity_list_wrapper              = 0x1EDA7A0; // offset
+        inline constexpr uintptr_t entity_list_decryption           = 0x153E560; // offset
+        inline constexpr uintptr_t entity                           = 0x20; // offset
+        inline constexpr uintptr_t buffer                           = 0x20; // offset
+        inline constexpr uintptr_t prefabName                       = 0x28; // offset
+        inline constexpr uintptr_t prefabNameNoExt                  = 0x70; // offset
+        inline constexpr uintptr_t parentEntity                     = 0x38; // offset
+        inline constexpr uintptr_t children                         = 0x80; // offset
+        inline constexpr uintptr_t net                              = 0x68; // offset
     }
 
     // WorldItem  (TypeDefIndex: 3430)
@@ -336,6 +371,9 @@ namespace offsets
     {
         // instance fields
         inline constexpr uintptr_t clientClothing                   = 0x340; // %1dd25c843e06778b0262cdb9657ecbaf3ba77592  [was %c9e8878872a99a7d2fccec7c9a668a90f6809bed]
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t playerName                       = 0x310; // offset
+        inline constexpr uintptr_t playerSteamID                    = 0x308; // offset
     }
 
     // StorageContainer  (TypeDefIndex: 4612)
@@ -423,6 +461,30 @@ namespace offsets
         inline constexpr uintptr_t eyeBone                          = 0x38; // Transform
         inline constexpr uintptr_t boneTransforms                   = 0x50; // Transform[]
         inline constexpr uintptr_t boneNames                        = 0x58; // string[]
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t bone_transform                   = 0x50; // offset
+        inline constexpr uintptr_t pelvis_bone_idx                  = 0x0; // offset
+        inline constexpr uintptr_t l_hip_bone_idx                   = 0x1; // offset
+        inline constexpr uintptr_t l_knee_bone_idx                  = 0x3; // offset
+        inline constexpr uintptr_t l_foot_bone_idx                  = 0x4; // offset
+        inline constexpr uintptr_t r_hip_bone_idx                   = 0xE; // offset
+        inline constexpr uintptr_t r_knee_bone_idx                  = 0x10; // offset
+        inline constexpr uintptr_t r_foot_bone_idx                  = 0x11; // offset
+        inline constexpr uintptr_t spine2_bone_idx                  = 0x15; // offset
+        inline constexpr uintptr_t spine4_bone_idx                  = 0x17; // offset
+        inline constexpr uintptr_t l_clavicle_bone_idx              = 0x18; // offset
+        inline constexpr uintptr_t l_upperarm_bone_idx              = 0x19; // offset
+        inline constexpr uintptr_t l_forearm_bone_idx               = 0x1A; // offset
+        inline constexpr uintptr_t l_hand_bone_idx                  = 0x1D; // offset
+        inline constexpr uintptr_t r_clavicle_bone_idx              = 0x3C; // offset
+        inline constexpr uintptr_t r_upperarm_bone_idx              = 0x3D; // offset
+        inline constexpr uintptr_t r_forearm_bone_idx               = 0x3E; // offset
+        inline constexpr uintptr_t r_hand_bone_idx                  = 0x41; // offset
+        inline constexpr uintptr_t neck_bone_idx                    = 0x34; // offset
+        inline constexpr uintptr_t head_bone_idx                    = 0x35; // offset
+        inline constexpr uintptr_t bone_array_count_off             = 0x18; // offset
+        inline constexpr uintptr_t bone_array_data_off              = 0x20; // offset
+        inline constexpr uintptr_t bone_array_elem_size             = 0x8; // offset
     }
 
     // PlayerInventory  (TypeDefIndex: 5034)
@@ -469,6 +531,8 @@ namespace offsets
         inline constexpr uintptr_t clothingBlocksAiming             = 0x79C; // bool
         inline constexpr uintptr_t clothingMoveSpeedReduction       = 0x7A0; // float
         inline constexpr uintptr_t player_rigidbody                 = 0x7B8; // Rigidbody  [was %ddbd01509fec9754dcdb4f17063eac36529b8092]
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t current_team                     = 0x538; // offset
     }
 
     // PlayerInput  (TypeDefIndex: 5803)
@@ -542,6 +606,9 @@ namespace offsets
         inline constexpr uintptr_t maxDistance                      = 0x1A4; // float  [was %dc9d1306e44339bb13587d242511cbc9cc58211e]
         inline constexpr uintptr_t hitTest                          = 0x1D8; // %c333d4d90900f1151de016cfab5209e19c8c2ac5  [was %9b2b6ce7e70afb23620f376830e8c680e8895d8e]
         inline constexpr uintptr_t integrity                        = 0x1F0; // float  [was %23f50784bac98d68de81f0d566d2922988fa9992]
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t previousPosition                 = 0x18C; // offset
+        inline constexpr uintptr_t previousVelocity                 = 0x198; // offset
     }
 
     // AutoTurret  (TypeDefIndex: 7114)
@@ -554,6 +621,8 @@ namespace offsets
         inline constexpr uintptr_t gun_yaw                          = 0x4B8; // Transform
         inline constexpr uintptr_t gun_pitch                        = 0x4C0; // Transform
         inline constexpr uintptr_t sightRange                       = 0x4C8; // float
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t lastYawRotation                  = 0x430; // offset
     }
 
     // HackableLockedCrate  (TypeDefIndex: 7639)
@@ -600,6 +669,15 @@ namespace offsets
         inline constexpr uintptr_t hipAimConeScale                  = 0x464; // float  [was %4d696d703e50f8febd6c5ab6176ab2676290b32e]
         inline constexpr uintptr_t hipAimConeOffset                 = 0x468; // float  [was %24e78b7ffb3c09dc532ef755c52808cb7950cc9a]
         inline constexpr uintptr_t isReloading                      = 0x46C; // bool  [was %d2022cce44e5e86d1237d0d87b425e2296fa584b]
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t ShotFired                        = 0x5E68300; // offset
+        inline constexpr uintptr_t DidAttackClientside              = 0x0; // offset
+        inline constexpr uintptr_t SetAmmoCount                     = 0x0; // offset
+        inline constexpr uintptr_t BeginCycle                       = 0x5E790D0; // offset
+        inline constexpr uintptr_t DoAttack_vtableoff               = 0x0; // offset
+        inline constexpr uintptr_t magazine                         = 0x3C8; // offset
+        inline constexpr uintptr_t sight_aim_cone_scale             = 0x45C; // offset
+        inline constexpr uintptr_t hip_aim_cone_scale               = 0x464; // offset
     }
 
     // GrowableEntity  (TypeDefIndex: 8181)
@@ -698,6 +776,8 @@ namespace offsets
     {
         // instance fields
         inline constexpr uintptr_t instance                         = 0x28; // BaseViewModel  [was %3b0dceb8cf3900fa4ed9fda3b2de8f0f96bc0ba3]
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t viewmodel_instance               = 0x28; // offset
     }
 
     // LootContainer  (TypeDefIndex: 9036)
@@ -727,6 +807,8 @@ namespace offsets
     // TOD_NightParameters  (TypeDefIndex: 11613)
     namespace tod_night_parameters
     {
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t AmbientMultiplier                = 0x5C; // offset
     }
 
     // TOD_CycleParameters  (TypeDefIndex: 12266)
@@ -757,12 +839,32 @@ namespace offsets
     // Object  (TypeDefIndex: 13330)
     namespace object
     {
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t m_CachedPtr                      = 0x10; // offset
     }
 
     // Camera  (TypeDefIndex: 18280)
     namespace camera
     {
         inline constexpr uintptr_t static_fields  = 0xB8;
+        // carried from reference (not derivable from metadata)
+        inline constexpr uintptr_t main_camera                      = 0xFC29470; // offset
+        inline constexpr uintptr_t camera_static                    = 0xB8; // offset
+        inline constexpr uintptr_t camera_object                    = 0x10; // offset
+        inline constexpr uintptr_t instance                         = 0x10; // offset
+        inline constexpr uintptr_t buffer                           = 0x10; // offset
+        inline constexpr uintptr_t entity                           = 0x10; // offset
+        inline constexpr uintptr_t position                         = 0x444; // offset
+        inline constexpr uintptr_t viewMatrix                       = 0x2FC; // offset
+        inline constexpr uintptr_t projectionMatrix                 = 0x18C; // offset
+        inline constexpr uintptr_t projection_layout                = 0x1; // offset
+        inline constexpr uintptr_t fieldOfView                      = 0x170; // offset
+        inline constexpr uintptr_t aspect                           = 0x4E0; // offset
+        inline constexpr uintptr_t nearClip                         = 0x3EC; // offset
+        inline constexpr uintptr_t farClip                          = 0x3F8; // offset
+        inline constexpr uintptr_t viewProjectionMatrix             = 0x2FC; // offset
+        inline constexpr uintptr_t worldToCameraMatrix              = 0x70; // offset
+        inline constexpr uintptr_t cullingMask                      = 0x3E8; // offset
     }
 
     // (verbatim) game_assembly
