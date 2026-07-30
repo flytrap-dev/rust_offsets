@@ -166,6 +166,46 @@ namespace offsets
         inline constexpr uintptr_t mountPoints                      = 0x3E0; // List<BaseVehicle.MountPointInfo>
     }
 
+    // BaseEntity  (TypeDefIndex: 354)
+    namespace base_entity
+    {
+        // instance fields
+        inline constexpr uintptr_t triggers                         = 0x128; // List<TriggerBase>  [was %0222cd394d8a84d08390cd8e358dfb717ba43acd]
+        inline constexpr uintptr_t positionLerp                     = 0x158; // %343ad29e8fe51570efd0e6529b1a290a5388faad  [was %4a74a1cefce35a0a679b94deeff746378f637821]
+        inline constexpr uintptr_t bounds                           = 0x17C; // Bounds
+        inline constexpr uintptr_t model                            = 0x1A8; // Model
+        inline constexpr uintptr_t flags                            = 0x1B0; // BaseEntity.Flags
+    }
+
+    // ItemIcon  (TypeDefIndex: 617)
+    namespace item_icon
+    {
+        inline constexpr uintptr_t type_info      = 0x0;  // TODO: resolve at runtime via type_definition_index
+        inline constexpr uintptr_t static_fields  = 0xB8;
+        // instance fields
+        inline constexpr uintptr_t backgroundImage                  = 0xE8; // Image
+    }
+
+    // CollectibleEntity  (TypeDefIndex: 806)
+    namespace collectible_entity
+    {
+        // instance fields
+        inline constexpr uintptr_t itemName                         = 0x1F0; // %93cba345c1c7797df4c30850761444134f17242b.Phrase
+        inline constexpr uintptr_t itemList                         = 0x1F8; // ItemAmount[]
+        inline constexpr uintptr_t pickupEffect                     = 0x200; // GameObjectRef
+        inline constexpr uintptr_t xpScale                          = 0x208; // float
+        inline constexpr uintptr_t suppressGatherRateMultiplier     = 0x20C; // bool
+    }
+
+    // FlintStrikeWeapon  (TypeDefIndex: 954)
+    namespace flint_strike_weapon
+    {
+        // instance fields
+        inline constexpr uintptr_t successFraction                  = 0x4A8; // float
+        inline constexpr uintptr_t strikeRecoil                     = 0x4B0; // RecoilProperties
+        inline constexpr uintptr_t _didSparkThisFrame               = 0x4B8; // bool  [was %972564fe924ad23daa01ee082ebad46fa8eb15ca]
+    }
+
     // TimedExplosive  (TypeDefIndex: 1248)
     namespace timed_explosive
     {
@@ -182,6 +222,76 @@ namespace offsets
         inline constexpr uintptr_t damageTypes                      = 0x268; // List<DamageTypeEntry>
     }
 
+    // HeldEntity  (TypeDefIndex: 1264)
+    namespace held_entity
+    {
+        // instance fields
+        inline constexpr uintptr_t itemOwner                        = 0x1F0; // %842300975b8c66f30a8b11cb281c7f8308eea718  [was %860eae1fdc04cba1625dbc29f80a560917c3d50b]
+        inline constexpr uintptr_t _punches                         = 0x240; // List<HeldEntity.%4b03b74818d6d61f7052683651c1a789d9d023e5>  [was %9ba894fce89c06854aa6dcb42ea42441221c23ae]
+        inline constexpr uintptr_t handBone                         = 0x250; // string
+        inline constexpr uintptr_t holdInfo                         = 0x260; // HeldEntity.HoldInfo
+        inline constexpr uintptr_t isBuildingTool                   = 0x27C; // bool
+        inline constexpr uintptr_t forcedOwner                      = 0x280; // BasePlayer
+        inline constexpr uintptr_t hostileScore                     = 0x29C; // float
+        inline constexpr uintptr_t viewModel                        = 0x2C8; // ViewModel  [was %c31f5ce68268507460d9cf80ea29210964a6567e]
+        inline constexpr uintptr_t ownerItemUID                     = 0x2D0; // %d01902b3c69e709006b588284a444fa3349c0090  [was %de372cd8d6ca4140de1c87c91e4b5aaf3e7c37d3]
+    }
+
+    // CompoundBowWeapon  (TypeDefIndex: 1451)
+    namespace compound_bow_weapon
+    {
+        // instance fields
+        inline constexpr uintptr_t stringHoldDurationMax            = 0x4C0; // float
+    }
+
+    // SkinnedMultiMesh  (TypeDefIndex: 1531)
+    namespace skinned_multi_mesh
+    {
+        // instance fields
+        inline constexpr uintptr_t RendererList                     = 0x50; // List<Renderer>  [was %885917d298102537a48ff117c7bc8472084567a8]
+    }
+
+    // OreResourceEntity  (TypeDefIndex: 1586)
+    namespace ore_resource_entity
+    {
+        // instance fields
+        inline constexpr uintptr_t bonusPrefab                      = 0x248; // GameObjectRef
+        inline constexpr uintptr_t finishEffect                     = 0x250; // GameObjectRef
+        inline constexpr uintptr_t bonusFailEffect                  = 0x258; // GameObjectRef
+        inline constexpr uintptr_t useHotspotMinigame               = 0x260; // bool
+        inline constexpr uintptr_t bonusSound                       = 0x268; // SoundPlayer
+        inline constexpr uintptr_t heightOffset                     = 0x270; // float
+    }
+
+    // BaseCombatEntity  (TypeDefIndex: 1848)
+    namespace base_combat_entity
+    {
+        // instance fields
+        inline constexpr uintptr_t skeletonProperties               = 0x220; // SkeletonProperties
+        inline constexpr uintptr_t baseProtection                   = 0x228; // ProtectionProperties
+        inline constexpr uintptr_t lifestate                        = 0x298; // BaseCombatEntity.LifeState
+        inline constexpr uintptr_t markAttackerHostile              = 0x29E; // bool
+        inline constexpr uintptr_t _health                          = 0x2A4; // float  [was %1f6155d561c5eeb867629155251e106c9a9fef2a]
+        inline constexpr uintptr_t _maxHealth                       = 0x2A8; // float  [was %1b56ef8a12b0eaa48cea062ad386dce35cba1928]
+    }
+
+    // ResourceEntity  (TypeDefIndex: 2329)
+    namespace resource_entity
+    {
+        // instance fields
+        inline constexpr uintptr_t startHealth                      = 0x1F0; // float
+        inline constexpr uintptr_t baseProtection                   = 0x1F8; // ProtectionProperties
+        inline constexpr uintptr_t skipDecorComponents              = 0x204; // bool
+    }
+
+    // LootableCorpse  (TypeDefIndex: 2362)
+    namespace lootable_corpse
+    {
+        // instance fields
+        inline constexpr uintptr_t playerSteamID                    = 0x308; // ulong  [was %10f994f2f1afed136aedee9c33d7bc921450041a]
+        inline constexpr uintptr_t _playerName                      = 0x310; // string  [was %01c7b416c66daa6e183820765d8891690bba0d75]
+    }
+
     // BaseNetworkable  (TypeDefIndex: 2735)
     namespace base_networkable
     {
@@ -190,6 +300,118 @@ namespace offsets
         inline constexpr uintptr_t prefabID                         = 0x54; // uint
         inline constexpr uintptr_t globalBroadcast                  = 0x58; // bool
         inline constexpr uintptr_t networkRange                     = 0x64; // EntityNetworkRange
+    }
+
+    // WorldItem  (TypeDefIndex: 3430)
+    namespace world_item
+    {
+        // instance fields
+        inline constexpr uintptr_t allowPickup                      = 0x1F0; // bool
+        inline constexpr uintptr_t item                             = 0x1F8; // %842300975b8c66f30a8b11cb281c7f8308eea718  [was %036598eec7b993e1aa7f7cb15220582664ea7466]
+    }
+
+    // BaseMelee  (TypeDefIndex: 3435)
+    namespace base_melee
+    {
+        // instance fields
+        inline constexpr uintptr_t canThrowAsProjectile             = 0x370; // bool
+        inline constexpr uintptr_t damageProperties                 = 0x378; // DamageProperties
+        inline constexpr uintptr_t maxDistance                      = 0x390; // float
+        inline constexpr uintptr_t attackRadius                     = 0x394; // float
+        inline constexpr uintptr_t blockSprintOnAttack              = 0x399; // bool
+        inline constexpr uintptr_t gathering                        = 0x3D0; // ResourceDispenser.GatherProperties
+    }
+
+    // PlayerEyes  (TypeDefIndex: 3445)
+    namespace player_eyes
+    {
+        // instance fields
+        inline constexpr uintptr_t viewOffset                       = 0x40; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<Vector3>  [was %adec1224a07987d5237c22aa805302eef03c9bc6]
+        inline constexpr uintptr_t bodyRotation                     = 0x50; // Quaternion  [was %e1d7fb35c9c3e4c65d9bae742ffcd5704e6c4734]
+        inline constexpr uintptr_t worldPosition                    = 0x60; // Vector3  [was %391eea69e4dacb7cfed40dde430c560792d8786b]
+    }
+
+    // PlayerCorpse  (TypeDefIndex: 3804)
+    namespace player_corpse
+    {
+        // instance fields
+        inline constexpr uintptr_t clientClothing                   = 0x340; // %1dd25c843e06778b0262cdb9657ecbaf3ba77592  [was %c9e8878872a99a7d2fccec7c9a668a90f6809bed]
+    }
+
+    // StorageContainer  (TypeDefIndex: 4612)
+    namespace storage_container
+    {
+        // instance fields
+        inline constexpr uintptr_t inventorySlots                   = 0x310; // int
+        inline constexpr uintptr_t dropsLoot                        = 0x314; // bool
+        inline constexpr uintptr_t dropLootDestroyPercent           = 0x318; // float
+        inline constexpr uintptr_t isLootable                       = 0x31D; // bool
+        inline constexpr uintptr_t isLockable                       = 0x31E; // bool
+        inline constexpr uintptr_t isMonitorable                    = 0x31F; // bool
+        inline constexpr uintptr_t panelName                        = 0x320; // string
+        inline constexpr uintptr_t panelTitle                       = 0x328; // %93cba345c1c7797df4c30850761444134f17242b.Phrase
+        inline constexpr uintptr_t allowedContents                  = 0x330; // %1dd25c843e06778b0262cdb9657ecbaf3ba77592.ContentsType
+        inline constexpr uintptr_t allowedItem                      = 0x338; // ItemDefinition
+        inline constexpr uintptr_t maxStackSize                     = 0x358; // int
+        inline constexpr uintptr_t needsBuildingPrivilegeToUse      = 0x35C; // bool
+        inline constexpr uintptr_t dropPosition                     = 0x370; // Vector3
+        inline constexpr uintptr_t dropVelocity                     = 0x37C; // Vector3
+        inline constexpr uintptr_t onlyAcceptCategory               = 0x388; // ItemCategory
+        inline constexpr uintptr_t onlyOneUser                      = 0x38C; // bool
+    }
+
+    // PlayerWalkMovement  (TypeDefIndex: 4657)
+    namespace player_walk_movement
+    {
+        // instance fields
+        inline constexpr uintptr_t zeroFrictionMaterial             = 0x60; // PhysicsMaterial
+        inline constexpr uintptr_t highFrictionMaterial             = 0x68; // PhysicsMaterial
+        inline constexpr uintptr_t capsuleHeight                    = 0x70; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %7cba44cecd9eaa675e6b6fd2548736eab3f75827]
+        inline constexpr uintptr_t capsuleCenter                    = 0x78; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %ac44efc9bcee3bb97254a25540df140baa1421b8]
+        inline constexpr uintptr_t capsuleHeightDucked              = 0x80; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %0a3ec3f36f12d85c2e46dcc0146bbeb4ccf424c9]
+        inline constexpr uintptr_t capsuleCenterDucked              = 0x88; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %f5179ecb450048d584b63ef889ff0d89e284bc5e]
+        inline constexpr uintptr_t capsuleRadius                    = 0x90; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %19811f31c27a0fa20eed0122c6b178ba4c540b4c]
+        inline constexpr uintptr_t gravityTestRadius                = 0x98; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %3435f9c49d07af63f8c929d98b5f27f29086a2b6]
+        inline constexpr uintptr_t gravityMultiplier                = 0xA8; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %4e9f30644fa9a8aa1c1c27c3f11c9c7e85a5e217]
+        inline constexpr uintptr_t gravityMultiplierSwimming        = 0xB0; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %ccaf3f82c113c9f2a17593d767e1d195c857bb07]
+        inline constexpr uintptr_t maxAngleWalking                  = 0xB8; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %809a771d2b760b307112a3cf258553c729f9f685]
+        inline constexpr uintptr_t maxAngleClimbing                 = 0xC0; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %7f1730608993be70f9b0e46c3ce434add76d0856]
+        inline constexpr uintptr_t maxAngleSliding                  = 0xC8; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %ce4b591f7e571c4568210e8199c7d04746137d53]
+        inline constexpr uintptr_t ladder                           = 0xD8; // TriggerLadder  [was %9e970c4a959f586a62f4f3e3df05b34082b3d9a0]
+        inline constexpr uintptr_t collisionDetectionMode           = 0xE0; // CollisionDetectionMode  [was %00e77597aa585829f7e0c22c7e6969b7300fcca7]
+        inline constexpr uintptr_t body                             = 0xE8; // %f37fbc7dfcab79e09d81b6365eb8c8c77764e6ce<Rigidbody>  [was %cb0af646946e2cf04c0fd7282bf3ba863f77c3b8]
+        inline constexpr uintptr_t capsule                          = 0xF0; // %f37fbc7dfcab79e09d81b6365eb8c8c77764e6ce<CapsuleCollider>  [was %c1920cdcd29f3d916f258a322bf0a94cb3af4d73]
+        inline constexpr uintptr_t maxVelocity                      = 0xF8; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %c073274818da8c577eb761c2c7123d6ad835237b]
+        inline constexpr uintptr_t groundAngle                      = 0x100; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %a32ddd63dc0a45686f83b16d3b33ce9da9912aa0]
+        inline constexpr uintptr_t groundAngleNew                   = 0x108; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %4cd96b263a4868e8e8ac59e83861c331f6d0cd58]
+        inline constexpr uintptr_t groundTime                       = 0x110; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %7cd20dd013966819e689356d648f05563e8e948d]
+        inline constexpr uintptr_t jumpTime                         = 0x118; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %c672e7d68e9e9c2f5be319e327b30c7481d7181f]
+        inline constexpr uintptr_t landTime                         = 0x120; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %0f7173ab6b40e1cab3ae3f06669f105080537282]
+        inline constexpr uintptr_t velocity                         = 0x128; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<Vector3>  [was %7f91d270a78a9e05e93d70e06d23c93633f8b5d9]
+        inline constexpr uintptr_t groundNormal                     = 0x138; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<Vector3>  [was %2dd6629ec064bde968a670893af1cbbd0c18814c]
+        inline constexpr uintptr_t groundNormalNew                  = 0x148; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<Vector3>  [was %1b48bd7f537cb3aa23a667a8642fc4651d116d55]
+        inline constexpr uintptr_t nextSprintTime                   = 0x198; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %981e8639f265e4e5dff8a264c5f4cd8e5dabeef7]
+        inline constexpr uintptr_t lastSprintTime                   = 0x1A0; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %d7e96802bc50964f8b23db9f1979b61e72358bb6]
+        inline constexpr uintptr_t sprintForced                     = 0x1A8; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %063135b220aacd61ee5e4d5d44032b3a431c24f7]
+        inline constexpr uintptr_t modify                           = 0x1B8; // BaseEntity.MovementModify  [was %e2936cde9a9a74c606b62c6e63e3f3f68c30b4c9]
+        inline constexpr uintptr_t grounded                         = 0x1BC; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %3399692d7fb583831a103193f3c9f772879fdacc]
+        inline constexpr uintptr_t wasGrounded                      = 0x1C4; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %f44dfb1b74a855a4299d65da868fd9556ef14c38]
+        inline constexpr uintptr_t climbing                         = 0x1CC; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %92941a54cc2102660325e1cc7eec6e389ab80e75]
+        inline constexpr uintptr_t wasClimbing                      = 0x1D4; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %59f4cd2cdf5af8d9de9b15acf74663f1242ab1c6]
+        inline constexpr uintptr_t sliding                          = 0x1DC; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %6219b35cc24878f57d2829c7750281171c6acebb]
+        inline constexpr uintptr_t wasSliding                       = 0x1E4; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %1f5e1be4db5ac158e5b121f276996a1e1dad396c]
+        inline constexpr uintptr_t swimming                         = 0x1EC; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %a8e479f6d32e86659d312ad9bee2e4c9276ff9b0]
+        inline constexpr uintptr_t wasSwimming                      = 0x1F4; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %d641de9777929c83dcb355f1e35de352b7eebbb3]
+        inline constexpr uintptr_t jumping                          = 0x1FC; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %ccec56cfab448b7f058e8468ea91ca63245376bc]
+        inline constexpr uintptr_t flying                           = 0x204; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %92acf6dcd6b54082459980a6c1da29efb3beecf6]
+        inline constexpr uintptr_t falling                          = 0x20C; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<bool>  [was %96d497fb8bbd577c65504bebc95f508ada94d8b4]
+    }
+
+    // BaseLauncher  (TypeDefIndex: 4944)
+    namespace base_launcher
+    {
+        // instance fields
+        inline constexpr uintptr_t initialSpeedMultiplier           = 0x4A8; // float
     }
 
     // Model  (TypeDefIndex: 4973)
@@ -201,6 +423,97 @@ namespace offsets
         inline constexpr uintptr_t eyeBone                          = 0x38; // Transform
         inline constexpr uintptr_t boneTransforms                   = 0x50; // Transform[]
         inline constexpr uintptr_t boneNames                        = 0x58; // string[]
+    }
+
+    // PlayerInventory  (TypeDefIndex: 5034)
+    namespace player_inventory
+    {
+        // instance fields
+        inline constexpr uintptr_t containerBelt                    = 0x28; // %1dd25c843e06778b0262cdb9657ecbaf3ba77592  [was %11acaf802c317cbdf66ef1f101f8727fdf2aa969]
+        inline constexpr uintptr_t containerMain                    = 0x38; // %1dd25c843e06778b0262cdb9657ecbaf3ba77592  [was %eb0d8d0b7e1a4790d90fe808c523892b90bad517]
+        inline constexpr uintptr_t loot                             = 0x48; // PlayerLoot
+        inline constexpr uintptr_t containerWear                    = 0x58; // %1dd25c843e06778b0262cdb9657ecbaf3ba77592  [was %00fa9c4b98be1c5cff0c6ecf7cfadd53e2d40111]
+    }
+
+    // AttackEntity  (TypeDefIndex: 5562)
+    namespace attack_entity
+    {
+        // instance fields
+        inline constexpr uintptr_t repeatDelay                      = 0x2DC; // float
+        inline constexpr uintptr_t nextAttackTime                   = 0x330; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %da51ad7887d5894ae5c4024619a99fb10d583256]
+    }
+
+    // BasePlayer  (TypeDefIndex: 5761)
+    namespace base_player
+    {
+        // instance fields
+        inline constexpr uintptr_t PlayerInventory                  = 0x2E0; // %f37fbc7dfcab79e09d81b6365eb8c8c77764e6ce<PlayerInventory>  [was %02532026d29a3aee754ca1d5c36ea1650ede0369]
+        inline constexpr uintptr_t currentGesture                   = 0x380; // GestureConfig  [was %b6f1966638e3befc309e618ec520a99b35e1b02b]
+        inline constexpr uintptr_t frozen                           = 0x388; // bool  [was %235fcd39e99fb12db17c25c71955971cd8408034]
+        inline constexpr uintptr_t lastSentTick                     = 0x390; // %e50f556421412c3a6e3eb26ab82a206e9a4cf41a  [was %4832c9cffed05ba7c4d58f0b87692ef565f284d8]
+        inline constexpr uintptr_t player_model                     = 0x3F0; // PlayerModel  [was %a81ae9e1212f9171caab18b007b555e112e1bd8a]
+        inline constexpr uintptr_t userIDString                     = 0x420; // string  [was %8c5c57b196fe2689e73df2319b2d3a66b0fa9122]
+        inline constexpr uintptr_t _lookingAt                       = 0x458; // GameObject  [was %79b288bdde620605e8047efb430e123f425817e0]
+        inline constexpr uintptr_t modelState                       = 0x478; // %1ecd8a2ae847a7ccaed140bc2ad3ea07ec18e1c4  [was %71b0fd58ff2750a5ecc42d5532a71a1baaa9edc7]
+        inline constexpr uintptr_t display_name                     = 0x4A8; // string  [was %0a096636d8216a4f1252ca5de44595d63ad5ec72]
+        inline constexpr uintptr_t PlayerEyes                       = 0x4F8; // %f37fbc7dfcab79e09d81b6365eb8c8c77764e6ce<PlayerEyes>  [was %a98a42b5bfc536d8e66ba456f98a91fb16069824]
+        inline constexpr uintptr_t Belt                             = 0x528; // %a6ab44fbdf1031e9e0957cb3a83abf180da1ab4e  [was %e0a809c8b35d544b4af710d85c4f4f962d0d05c0]
+        inline constexpr uintptr_t clActiveItem                     = 0x568; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<%d01902b3c69e709006b588284a444fa3349c0090>  [was %c928b0dcec5bddd75df60086a11b6a8387ef5b67]
+        inline constexpr uintptr_t mounted                          = 0x5C0; // %1553e99a8b8d2f529bd3785bed0b32ce9e12df25  [was %098b222d3451c86339bbd570e8ab4f79a25e4478]
+        inline constexpr uintptr_t playerFlags                      = 0x6B8; // BasePlayer.PlayerFlags
+        inline constexpr uintptr_t movement                         = 0x6F8; // BaseMovement  [was %0503a56cd660fdd734a82f2b2df5b91281dd34c9]
+        inline constexpr uintptr_t userID                           = 0x700; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<ulong>  [was %1a8ba40a5b3d2d69d20ede18c2f4b5c6bcb6d2cc]
+        inline constexpr uintptr_t player_input                     = 0x728; // PlayerInput  [was %e34578bd314a70fe7ba5c8bd846f301a707279cb]
+        inline constexpr uintptr_t weaponMoveSpeedScale             = 0x798; // float
+        inline constexpr uintptr_t clothingBlocksAiming             = 0x79C; // bool
+        inline constexpr uintptr_t clothingMoveSpeedReduction       = 0x7A0; // float
+        inline constexpr uintptr_t player_rigidbody                 = 0x7B8; // Rigidbody  [was %ddbd01509fec9754dcdb4f17063eac36529b8092]
+    }
+
+    // PlayerInput  (TypeDefIndex: 5803)
+    namespace player_input
+    {
+        // instance fields
+        inline constexpr uintptr_t state                            = 0x28; // %b6f63849d64110a5c852be55fb8b612f1f3d480c  [was %a81f29030b6297ea5f233fb28b4e67167f17a0ea]
+        inline constexpr uintptr_t bodyAngles                       = 0x44; // Vector3  [was %a16d1441743f1e4d14887f726bc4e85f55dd8417]
+        inline constexpr uintptr_t yaw                              = 0x60; // float  [was %0df45b83e68e053aa44113b95e5a987a8f51c761]
+    }
+
+    // RecoilProperties  (TypeDefIndex: 6578)
+    namespace recoil_properties
+    {
+        // instance fields
+        inline constexpr uintptr_t recoilYawMin                     = 0x18; // float
+        inline constexpr uintptr_t recoilYawMax                     = 0x1C; // float
+        inline constexpr uintptr_t recoilPitchMin                   = 0x20; // float
+        inline constexpr uintptr_t recoilPitchMax                   = 0x24; // float
+        inline constexpr uintptr_t timeToTakeMin                    = 0x28; // float
+        inline constexpr uintptr_t timeToTakeMax                    = 0x2C; // float
+        inline constexpr uintptr_t ADSScale                         = 0x30; // float
+        inline constexpr uintptr_t movementPenalty                  = 0x34; // float
+        inline constexpr uintptr_t clampPitch                       = 0x38; // float
+        inline constexpr uintptr_t pitchCurve                       = 0x40; // AnimationCurve
+        inline constexpr uintptr_t yawCurve                         = 0x48; // AnimationCurve
+        inline constexpr uintptr_t overrideAimconeWithCurve         = 0x5C; // bool
+        inline constexpr uintptr_t aimconeCurveScale                = 0x60; // float
+        inline constexpr uintptr_t aimconeProbabilityCurve          = 0x70; // AnimationCurve
+        inline constexpr uintptr_t ammoAimconeScaleMultiProjectile  = 0x78; // float
+        inline constexpr uintptr_t ammoAimconeScaleSingleProjectile = 0x7C; // float
+        inline constexpr uintptr_t newRecoilOverride                = 0x80; // RecoilProperties
+    }
+
+    // ItemModProjectile  (TypeDefIndex: 6642)
+    namespace item_mod_projectile
+    {
+        // instance fields
+        inline constexpr uintptr_t projectileObject                 = 0x20; // GameObjectRef
+        inline constexpr uintptr_t ammoType                         = 0x30; // AmmoTypes
+        inline constexpr uintptr_t projectileSpread                 = 0x3C; // float
+        inline constexpr uintptr_t projectileVelocity               = 0x40; // float
+        inline constexpr uintptr_t projectileVelocitySpread         = 0x44; // float
+        inline constexpr uintptr_t useCurve                         = 0x48; // bool
+        inline constexpr uintptr_t spreadScalar                     = 0x50; // AnimationCurve
+        inline constexpr uintptr_t category                         = 0x68; // string
     }
 
     // Projectile  (TypeDefIndex: 6923)
@@ -230,6 +543,145 @@ namespace offsets
         inline constexpr uintptr_t integrity                        = 0x1F0; // float  [was %23f50784bac98d68de81f0d566d2922988fa9992]
     }
 
+    // AutoTurret  (TypeDefIndex: 7114)
+    namespace auto_turret
+    {
+        // instance fields
+        inline constexpr uintptr_t authorizedPlayers                = 0x418; // HashSet<ulong>  [was %1c89b139b9fddd4e445dbc648b7ca8f7975fb4b5]
+        inline constexpr uintptr_t lastYaw                          = 0x430; // Quaternion  [was %d7b1dbb678b9f1d2a6ae303a9ebb8962a38d12f4]
+        inline constexpr uintptr_t muzzlePos                        = 0x4A0; // Transform
+        inline constexpr uintptr_t gun_yaw                          = 0x4B8; // Transform
+        inline constexpr uintptr_t gun_pitch                        = 0x4C0; // Transform
+        inline constexpr uintptr_t sightRange                       = 0x4C8; // float
+    }
+
+    // HackableLockedCrate  (TypeDefIndex: 7639)
+    namespace hackable_locked_crate
+    {
+        // instance fields
+        inline constexpr uintptr_t timerText                        = 0x3F0; // Text
+        inline constexpr uintptr_t hackSeconds                      = 0x400; // float  [was %4f0c72266697b1307e1cfb025f93e80fc6fba63e]
+    }
+
+    // BaseProjectile  (TypeDefIndex: 7726)
+    namespace base_projectile
+    {
+        // instance fields
+        inline constexpr uintptr_t projectileVelocityScale          = 0x37C; // float
+        inline constexpr uintptr_t automatic                        = 0x380; // bool
+        inline constexpr uintptr_t reloadTime                       = 0x3C0; // float
+        inline constexpr uintptr_t primaryMagazine                  = 0x3C8; // BaseProjectile.Magazine
+        inline constexpr uintptr_t fractionalReload                 = 0x3D0; // bool
+        inline constexpr uintptr_t aimSway                          = 0x3E8; // float
+        inline constexpr uintptr_t aimSwaySpeed                     = 0x3EC; // float
+        inline constexpr uintptr_t recoil                           = 0x3F0; // RecoilProperties
+        inline constexpr uintptr_t aimconeCurve                     = 0x3F8; // AnimationCurve
+        inline constexpr uintptr_t aimCone                          = 0x400; // float
+        inline constexpr uintptr_t hipAimCone                       = 0x404; // float
+        inline constexpr uintptr_t aimconePenaltyPerShot            = 0x408; // float
+        inline constexpr uintptr_t aimConePenaltyMax                = 0x40C; // float
+        inline constexpr uintptr_t aimconePenaltyRecoverTime        = 0x410; // float
+        inline constexpr uintptr_t aimconePenaltyRecoverDelay       = 0x414; // float
+        inline constexpr uintptr_t stancePenaltyScale               = 0x418; // float
+        inline constexpr uintptr_t hasADS                           = 0x41C; // bool
+        inline constexpr uintptr_t noAimingWhileCycling             = 0x41D; // bool
+        inline constexpr uintptr_t manualCycle                      = 0x41E; // bool
+        inline constexpr uintptr_t needsCycle                       = 0x424; // bool  [was %f01e0cbcfd0b01ca29cfcca6ba6331033fc7b8fe]
+        inline constexpr uintptr_t isBurstWeapon                    = 0x427; // bool
+        inline constexpr uintptr_t canChangeFireModes               = 0x428; // bool
+        inline constexpr uintptr_t internalBurstFireRateScale       = 0x430; // float
+        inline constexpr uintptr_t internalBurstAimConeScale        = 0x434; // float
+        inline constexpr uintptr_t stancePenalty                    = 0x440; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %c5a3c9532e604b329e1373f486920865b8b99b3a]
+        inline constexpr uintptr_t aimconePenalty                   = 0x448; // %0edfbcfa14c5dacec4f7dcebe810c7323587cc6e<float>  [was %2f9258a6f5d86d10125580933743c6917253fb3a]
+        inline constexpr uintptr_t cachedModHash                    = 0x458; // uint  [was %d7f48fa01b69cfc1fc3b70482df842499bb3f061]
+        inline constexpr uintptr_t sightAimConeScale                = 0x45C; // float  [was %c34be815cb768d63fc115749bda10ba6fea0dfbc]
+        inline constexpr uintptr_t sightAimConeOffset               = 0x460; // float  [was %0aecb34f2e1c71d8fc249e54c769d42026c07ad2]
+        inline constexpr uintptr_t hipAimConeScale                  = 0x464; // float  [was %4d696d703e50f8febd6c5ab6176ab2676290b32e]
+        inline constexpr uintptr_t hipAimConeOffset                 = 0x468; // float  [was %24e78b7ffb3c09dc532ef755c52808cb7950cc9a]
+        inline constexpr uintptr_t isReloading                      = 0x46C; // bool  [was %d2022cce44e5e86d1237d0d87b425e2296fa584b]
+    }
+
+    // GrowableEntity  (TypeDefIndex: 8181)
+    namespace growable_entity
+    {
+        // instance fields
+        inline constexpr uintptr_t plantSkin                        = 0x2D8; // PlantSkin  [was %5f38b73bac4d5ec837826758af9ae4157a46d48a]
+        inline constexpr uintptr_t Properties                       = 0x338; // PlantProperties
+        inline constexpr uintptr_t SourceItemDef                    = 0x340; // ItemDefinition
+        inline constexpr uintptr_t state                            = 0x348; // PlantProperties.State  [was %f6d748a6b6524faa6dc3dedb92c2f563d4ece67b]
+    }
+
+    // PlayerModel  (TypeDefIndex: 8223)
+    namespace player_model
+    {
+        // instance fields
+        inline constexpr uintptr_t visibleNullable                  = 0xC4; // Nullable<bool>  [was %c3520593bb6c87fd28b4409f52822bf4c75fc408]
+        inline constexpr uintptr_t collision                        = 0xD0; // BoxCollider
+        inline constexpr uintptr_t fullMask                         = 0x208; // AvatarMask
+        inline constexpr uintptr_t newVelocity                      = 0x31C; // Vector3  [was %113973e2df71617a42694687fdfdbd06d4291305]
+        inline constexpr uintptr_t _multiMesh                       = 0x3B8; // SkinnedMultiMesh  [was %0e0fa1c3c534372b0426c8d5e9bd914b44258930]
+        inline constexpr uintptr_t isNpc                            = 0x490; // bool  [was %3e98512b7390633296c24c24913828ceca8b9e31]
+    }
+
+    // BaseViewModel  (TypeDefIndex: 8308)
+    namespace base_view_model
+    {
+        // instance fields
+        inline constexpr uintptr_t useViewModelCamera               = 0x40; // bool
+        inline constexpr uintptr_t lower                            = 0xA0; // ViewmodelLower  [was %0ebe334b599495cab0ed239007113605002e15dd]
+        inline constexpr uintptr_t ironSights                       = 0xB0; // IronSights  [was %e47093e45245dd3ece61f7933cbb1339c2919907]
+        inline constexpr uintptr_t model                            = 0xC0; // Model  [was %30c4656167892c129df0119199433b3e93ad4a5c]
+        inline constexpr uintptr_t sway                             = 0x100; // ViewmodelSway  [was %50f30bb8644473264cfbbf4ad5798ddadc82a7e1]
+        inline constexpr uintptr_t bob                              = 0x108; // ViewmodelBob  [was %6d0b71909503a069cfbab0bb72eb3966715b0fef]
+    }
+
+    // ProjectileWeaponMod  (TypeDefIndex: 8403)
+    namespace projectile_weapon_mod
+    {
+        // instance fields
+        inline constexpr uintptr_t ConditionLossMultiplier          = 0x1F0; // float
+        inline constexpr uintptr_t additiveEffect                   = 0x1F8; // GameObjectRef
+        inline constexpr uintptr_t defaultSilencerEffect            = 0x200; // GameObjectRef
+        inline constexpr uintptr_t isSilencer                       = 0x208; // bool
+        inline constexpr uintptr_t silencerType                     = 0x20C; // ProjectileWeaponMod.SilencerType
+        inline constexpr uintptr_t repeatDelay                      = 0x210; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t projectileVelocity               = 0x21C; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t projectileDamage                 = 0x228; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t projectileDistance               = 0x234; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t aimsway                          = 0x240; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t aimswaySpeed                     = 0x24C; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t recoil                           = 0x258; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t sightAimCone                     = 0x264; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t hipAimCone                       = 0x270; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t isLight                          = 0x27C; // bool
+        inline constexpr uintptr_t isMuzzleBrake                    = 0x27D; // bool
+        inline constexpr uintptr_t isMuzzleBoost                    = 0x27E; // bool
+        inline constexpr uintptr_t isScope                          = 0x27F; // bool
+        inline constexpr uintptr_t zoomAmountDisplayOnly            = 0x280; // float
+        inline constexpr uintptr_t magazineCapacity                 = 0x284; // ProjectileWeaponMod.Modifier
+        inline constexpr uintptr_t needsOnForEffects                = 0x290; // bool
+        inline constexpr uintptr_t burstCount                       = 0x294; // int
+        inline constexpr uintptr_t timeBetweenBursts                = 0x298; // float
+        inline constexpr uintptr_t zoomLevels                       = 0x2A0; // float[]
+        inline constexpr uintptr_t fovChangeEffect                  = 0x2A8; // GameObjectRef
+        inline constexpr uintptr_t allowPings                       = 0x2B0; // bool
+    }
+
+    // ItemDefinition  (TypeDefIndex: 8669)
+    namespace item_definition
+    {
+        // instance fields
+        inline constexpr uintptr_t itemid                           = 0x20; // int
+        inline constexpr uintptr_t shortname                        = 0x28; // string
+        inline constexpr uintptr_t displayName                      = 0x40; // %93cba345c1c7797df4c30850761444134f17242b.Phrase
+        inline constexpr uintptr_t iconSprite                       = 0x50; // Sprite
+        inline constexpr uintptr_t category                         = 0x58; // ItemCategory
+        inline constexpr uintptr_t stackable                        = 0x78; // int
+        inline constexpr uintptr_t rarity                           = 0x94; // Rarity
+        inline constexpr uintptr_t condition                        = 0xB8; // ItemDefinition.Condition
+        inline constexpr uintptr_t ItemModWearable                  = 0x1A8; // ItemModWearable  [was %2c9c824e8d8178888a124a93693ff3bdf148e6ae]
+    }
+
     // ServerProjectile  (TypeDefIndex: 8806)
     namespace server_projectile
     {
@@ -238,6 +690,30 @@ namespace offsets
         inline constexpr uintptr_t gravityModifier                  = 0x38; // float
         inline constexpr uintptr_t speed                            = 0x3C; // float
         inline constexpr uintptr_t radius                           = 0x5C; // float
+    }
+
+    // ViewModel  (TypeDefIndex: 9016)
+    namespace view_model
+    {
+        // instance fields
+        inline constexpr uintptr_t instance                         = 0x28; // BaseViewModel  [was %3b0dceb8cf3900fa4ed9fda3b2de8f0f96bc0ba3]
+    }
+
+    // LootContainer  (TypeDefIndex: 9036)
+    namespace loot_container
+    {
+        // instance fields
+        inline constexpr uintptr_t destroyOnEmpty                   = 0x398; // bool
+        inline constexpr uintptr_t lootDefinition                   = 0x3A0; // LootSpawn
+        inline constexpr uintptr_t maxDefinitionsToSpawn            = 0x3A8; // int
+        inline constexpr uintptr_t minSecondsBetweenRefresh         = 0x3AC; // float
+        inline constexpr uintptr_t maxSecondsBetweenRefresh         = 0x3B0; // float
+        inline constexpr uintptr_t initialLootSpawn                 = 0x3B4; // bool
+        inline constexpr uintptr_t xpLootedScale                    = 0x3B8; // float
+        inline constexpr uintptr_t scrapAmount                      = 0x3C4; // int
+        inline constexpr uintptr_t LootSpawnSlots                   = 0x3D0; // LootContainer.LootSpawnSlot[]
+        inline constexpr uintptr_t SpawnType                        = 0x3D8; // LootContainer.spawnType
+        inline constexpr uintptr_t clanScoreEventForFirstLooter     = 0x3DC; // ClanScoreEventType
     }
 
     // TOD_AmbientParameters  (TypeDefIndex: 11305)
@@ -250,6 +726,16 @@ namespace offsets
     // TOD_NightParameters  (TypeDefIndex: 11613)
     namespace tod_night_parameters
     {
+    }
+
+    // TOD_CycleParameters  (TypeDefIndex: 12266)
+    namespace tod_cycle_parameters
+    {
+        // instance fields
+        inline constexpr uintptr_t Hour                             = 0x10; // float
+        inline constexpr uintptr_t Day                              = 0x14; // int
+        inline constexpr uintptr_t Month                            = 0x18; // int
+        inline constexpr uintptr_t Year                             = 0x1C; // int
     }
 
     // TOD_Sky  (TypeDefIndex: 12555)
@@ -278,8 +764,8 @@ namespace offsets
         inline constexpr uintptr_t static_fields  = 0xB8;
     }
 
-    // (verbatim) GameAssembly
-    namespace GameAssembly
+    // (verbatim) game_assembly
+    namespace game_assembly
     {
         inline constexpr uintptr_t timestamp                        = 0x6A6A3C20; // offset
         inline constexpr uintptr_t type_info_definition_table       = 0x100DB1B8; // offset
@@ -299,8 +785,8 @@ namespace offsets
         inline constexpr uintptr_t il2cpp_type_get_object           = 0x848C40; // offset
     }
 
-    // (verbatim) PhysX
-    namespace PhysX
+    // (verbatim) phys_x
+    namespace phys_x
     {
         inline constexpr uintptr_t type_info                        = 0xFC1BB40; // offset
         inline constexpr uintptr_t static_fields                    = 0xB8; // offset
@@ -339,58 +825,8 @@ namespace offsets
         inline constexpr uintptr_t static_fields                    = 0xB8; // offset
     }
 
-    // (verbatim) BasePlayer
-    namespace BasePlayer
-    {
-        inline constexpr uintptr_t clActiveItem                     = 0x568; // offset
-        inline constexpr uintptr_t PlayerEyes                       = 0x4F8; // offset
-        inline constexpr uintptr_t PlayerInventory                  = 0x2E0; // offset
-        inline constexpr uintptr_t current_team                     = 0x538; // offset
-        inline constexpr uintptr_t movement                         = 0x6F8; // offset
-        inline constexpr uintptr_t player_model                     = 0x3F0; // offset
-        inline constexpr uintptr_t playerFlags                      = 0x6B8; // offset
-        inline constexpr uintptr_t userID                           = 0x700; // offset
-        inline constexpr uintptr_t userIDString                     = 0x420; // offset
-        inline constexpr uintptr_t display_name                     = 0x4A8; // offset
-        inline constexpr uintptr_t player_input                     = 0x728; // offset
-        inline constexpr uintptr_t modelState                       = 0x478; // offset
-        inline constexpr uintptr_t mounted                          = 0x5C0; // offset
-        inline constexpr uintptr_t Belt                             = 0x528; // offset
-        inline constexpr uintptr_t _lookingAt                       = 0x458; // offset
-        inline constexpr uintptr_t weaponMoveSpeedScale             = 0x798; // offset
-        inline constexpr uintptr_t clothingBlocksAiming             = 0x79C; // offset
-        inline constexpr uintptr_t clothingMoveSpeedReduction       = 0x7A0; // offset
-        inline constexpr uintptr_t player_rigidbody                 = 0x7B8; // offset
-        inline constexpr uintptr_t frozen                           = 0x388; // offset
-        inline constexpr uintptr_t currentGesture                   = 0x380; // offset
-        inline constexpr uintptr_t lastSentTick                     = 0x390; // offset
-    }
-
-    // (verbatim) BaseCombatEntity
-    namespace BaseCombatEntity
-    {
-        inline constexpr uintptr_t skeletonProperties               = 0x220; // offset
-        inline constexpr uintptr_t baseProtection                   = 0x228; // offset
-        inline constexpr uintptr_t lifestate                        = 0x298; // offset
-        inline constexpr uintptr_t markAttackerHostile              = 0x29E; // offset
-        inline constexpr uintptr_t model                            = 0x1A8; // offset
-        inline constexpr uintptr_t _health                          = 0x2A4; // offset
-        inline constexpr uintptr_t _maxHealth                       = 0x2A8; // offset
-    }
-
-    // (verbatim) BaseEntity
-    namespace BaseEntity
-    {
-        inline constexpr uintptr_t bounds                           = 0x17C; // offset
-        inline constexpr uintptr_t model                            = 0x1A8; // offset
-        inline constexpr uintptr_t flags                            = 0x1B0; // offset
-        inline constexpr uintptr_t triggers                         = 0x128; // offset
-        inline constexpr uintptr_t position                         = 0x0; // offset
-        inline constexpr uintptr_t positionLerp                     = 0x158; // offset
-    }
-
-    // (verbatim) BaseEntityFlags
-    namespace BaseEntityFlags
+    // (verbatim) base_entity_flags
+    namespace base_entity_flags
     {
         inline constexpr uintptr_t Placeholder                      = 0x1; // offset
         inline constexpr uintptr_t On                               = 0x2; // offset
@@ -421,8 +857,8 @@ namespace offsets
         inline constexpr uintptr_t ThirdPersonViewmode              = 0x400; // offset
     }
 
-    // (verbatim) ModelState
-    namespace ModelState
+    // (verbatim) model_state
+    namespace model_state
     {
         inline constexpr uintptr_t flags                            = 0x3C; // offset
         inline constexpr uintptr_t waterLevel                       = 0x58; // offset
@@ -433,25 +869,11 @@ namespace offsets
         inline constexpr uintptr_t OnGround                         = 0x4; // offset
     }
 
-    // (verbatim) ItemContainer
-    namespace ItemContainer
+    // (verbatim) item_container
+    namespace item_container
     {
         inline constexpr uintptr_t ItemList                         = 0x48; // offset
         inline constexpr uintptr_t flags                            = 0x68; // offset
-    }
-
-    // (verbatim) ItemDefinition
-    namespace ItemDefinition
-    {
-        inline constexpr uintptr_t itemid                           = 0x20; // offset
-        inline constexpr uintptr_t shortname                        = 0x28; // offset
-        inline constexpr uintptr_t displayName                      = 0x40; // offset
-        inline constexpr uintptr_t category                         = 0x58; // offset
-        inline constexpr uintptr_t stackable                        = 0x78; // offset
-        inline constexpr uintptr_t iconSprite                       = 0x50; // offset
-        inline constexpr uintptr_t rarity                           = 0x94; // offset
-        inline constexpr uintptr_t condition                        = 0xB8; // offset
-        inline constexpr uintptr_t ItemModWearable                  = 0x1A8; // offset
     }
 
     // (verbatim) item
@@ -467,88 +889,30 @@ namespace offsets
         inline constexpr uintptr_t HeldEntity                       = 0x58; // offset
     }
 
-    // (verbatim) AttackEntity
-    namespace AttackEntity
-    {
-        inline constexpr uintptr_t repeatDelay                      = 0x2DC; // offset
-        inline constexpr uintptr_t nextAttackTime                   = 0x330; // offset
-    }
-
-    // (verbatim) BaseProjectile
-    namespace BaseProjectile
-    {
-        inline constexpr uintptr_t ShotFired                        = 0x5E68300; // offset
-        inline constexpr uintptr_t DidAttackClientside              = 0x0; // offset
-        inline constexpr uintptr_t SetAmmoCount                     = 0x0; // offset
-        inline constexpr uintptr_t BeginCycle                       = 0x5E790D0; // offset
-        inline constexpr uintptr_t DoAttack_vtableoff               = 0x0; // offset
-        inline constexpr uintptr_t aimCone                          = 0x400; // offset
-        inline constexpr uintptr_t hipAimCone                       = 0x404; // offset
-        inline constexpr uintptr_t aimSway                          = 0x3E8; // offset
-        inline constexpr uintptr_t aimSwaySpeed                     = 0x3EC; // offset
-        inline constexpr uintptr_t recoil                           = 0x3F0; // offset
-        inline constexpr uintptr_t projectileVelocityScale          = 0x37C; // offset
-        inline constexpr uintptr_t automatic                        = 0x380; // offset
-        inline constexpr uintptr_t reloadTime                       = 0x3C0; // offset
-        inline constexpr uintptr_t primaryMagazine                  = 0x3C8; // offset
-        inline constexpr uintptr_t magazine                         = 0x3C8; // offset
-        inline constexpr uintptr_t manualCycle                      = 0x41E; // offset
-        inline constexpr uintptr_t needsCycle                       = 0x424; // offset
-        inline constexpr uintptr_t isReloading                      = 0x46C; // offset
-        inline constexpr uintptr_t stancePenalty                    = 0x440; // offset
-        inline constexpr uintptr_t aimconePenalty                   = 0x448; // offset
-        inline constexpr uintptr_t sightAimConeScale                = 0x45C; // offset
-        inline constexpr uintptr_t sight_aim_cone_scale             = 0x45C; // offset
-        inline constexpr uintptr_t hipAimConeScale                  = 0x464; // offset
-        inline constexpr uintptr_t hip_aim_cone_scale               = 0x464; // offset
-        inline constexpr uintptr_t fractionalReload                 = 0x3D0; // offset
-        inline constexpr uintptr_t aimconeCurve                     = 0x3F8; // offset
-        inline constexpr uintptr_t noAimingWhileCycling             = 0x41D; // offset
-        inline constexpr uintptr_t cachedModHash                    = 0x458; // offset
-        inline constexpr uintptr_t hipAimConeOffset                 = 0x468; // offset
-        inline constexpr uintptr_t sightAimConeOffset               = 0x460; // offset
-        inline constexpr uintptr_t aimconePenaltyPerShot            = 0x408; // offset
-        inline constexpr uintptr_t aimConePenaltyMax                = 0x40C; // offset
-        inline constexpr uintptr_t aimconePenaltyRecoverTime        = 0x410; // offset
-        inline constexpr uintptr_t aimconePenaltyRecoverDelay       = 0x414; // offset
-        inline constexpr uintptr_t stancePenaltyScale               = 0x418; // offset
-        inline constexpr uintptr_t hasADS                           = 0x41C; // offset
-        inline constexpr uintptr_t isBurstWeapon                    = 0x427; // offset
-        inline constexpr uintptr_t canChangeFireModes               = 0x428; // offset
-        inline constexpr uintptr_t internalBurstFireRateScale       = 0x430; // offset
-        inline constexpr uintptr_t internalBurstAimConeScale        = 0x434; // offset
-    }
-
-    // (verbatim) CompoundBowWeapon
-    namespace CompoundBowWeapon
-    {
-        inline constexpr uintptr_t stringHoldDurationMax            = 0x4C0; // offset
-    }
-
-    // (verbatim) PlayerProjectileUpdate
-    namespace PlayerProjectileUpdate
+    // (verbatim) player_projectile_update
+    namespace player_projectile_update
     {
         inline constexpr uintptr_t Dispose                          = 0xA9BD8D0; // offset
         inline constexpr uintptr_t _disposed                        = 0x30; // offset
         inline constexpr uintptr_t ShouldPool                       = 0x31; // offset
     }
 
-    // (verbatim) PlayerProjectileAttack
-    namespace PlayerProjectileAttack
+    // (verbatim) player_projectile_attack
+    namespace player_projectile_attack
     {
         inline constexpr uintptr_t hitDistance                      = 0x2C; // offset
         inline constexpr uintptr_t hitVelocity                      = 0x20; // offset
         inline constexpr uintptr_t travelTime                       = 0x10; // offset
     }
 
-    // (verbatim) PlayerAttack
-    namespace PlayerAttack
+    // (verbatim) player_attack
+    namespace player_attack
     {
         inline constexpr uintptr_t projectileID                     = 0x20; // offset
     }
 
-    // (verbatim) HitTest
-    namespace HitTest
+    // (verbatim) hit_test
+    namespace hit_test
     {
         inline constexpr uintptr_t type                             = 0xA8; // offset
         inline constexpr uintptr_t attackray                        = 0x58; // offset
@@ -573,125 +937,6 @@ namespace offsets
         inline constexpr uintptr_t hitentity                        = 0x10; // offset
     }
 
-    // (verbatim) BaseMelee
-    namespace BaseMelee
-    {
-        inline constexpr uintptr_t damageProperties                 = 0x378; // offset
-        inline constexpr uintptr_t maxDistance                      = 0x390; // offset
-        inline constexpr uintptr_t attackRadius                     = 0x394; // offset
-        inline constexpr uintptr_t blockSprintOnAttack              = 0x399; // offset
-        inline constexpr uintptr_t gathering                        = 0x3D0; // offset
-        inline constexpr uintptr_t canThrowAsProjectile             = 0x370; // offset
-    }
-
-    // (verbatim) ItemModProjectile
-    namespace ItemModProjectile
-    {
-        inline constexpr uintptr_t projectileObject                 = 0x20; // offset
-        inline constexpr uintptr_t ammoType                         = 0x30; // offset
-        inline constexpr uintptr_t projectileSpread                 = 0x3C; // offset
-        inline constexpr uintptr_t projectileVelocity               = 0x40; // offset
-        inline constexpr uintptr_t projectileVelocitySpread         = 0x44; // offset
-        inline constexpr uintptr_t useCurve                         = 0x48; // offset
-        inline constexpr uintptr_t spreadScalar                     = 0x50; // offset
-        inline constexpr uintptr_t category                         = 0x68; // offset
-    }
-
-    // (verbatim) ProjectileWeaponMod
-    namespace ProjectileWeaponMod
-    {
-        inline constexpr uintptr_t ConditionLossMultiplier          = 0x1F0; // offset
-        inline constexpr uintptr_t additiveEffect                   = 0x1F8; // offset
-        inline constexpr uintptr_t defaultSilencerEffect            = 0x200; // offset
-        inline constexpr uintptr_t isSilencer                       = 0x208; // offset
-        inline constexpr uintptr_t silencerType                     = 0x20C; // offset
-        inline constexpr uintptr_t repeatDelay                      = 0x210; // offset
-        inline constexpr uintptr_t projectileVelocity               = 0x21C; // offset
-        inline constexpr uintptr_t projectileDamage                 = 0x228; // offset
-        inline constexpr uintptr_t projectileDistance               = 0x234; // offset
-        inline constexpr uintptr_t aimsway                          = 0x240; // offset
-        inline constexpr uintptr_t aimswaySpeed                     = 0x24C; // offset
-        inline constexpr uintptr_t recoil                           = 0x258; // offset
-        inline constexpr uintptr_t sightAimCone                     = 0x264; // offset
-        inline constexpr uintptr_t hipAimCone                       = 0x270; // offset
-        inline constexpr uintptr_t isLight                          = 0x27C; // offset
-        inline constexpr uintptr_t isMuzzleBrake                    = 0x27D; // offset
-        inline constexpr uintptr_t isMuzzleBoost                    = 0x27E; // offset
-        inline constexpr uintptr_t isScope                          = 0x27F; // offset
-        inline constexpr uintptr_t zoomAmountDisplayOnly            = 0x280; // offset
-        inline constexpr uintptr_t magazineCapacity                 = 0x284; // offset
-        inline constexpr uintptr_t needsOnForEffects                = 0x290; // offset
-        inline constexpr uintptr_t burstCount                       = 0x294; // offset
-        inline constexpr uintptr_t timeBetweenBursts                = 0x298; // offset
-        inline constexpr uintptr_t zoomLevels                       = 0x2A0; // offset
-        inline constexpr uintptr_t fovChangeEffect                  = 0x2A8; // offset
-        inline constexpr uintptr_t allowPings                       = 0x2B0; // offset
-    }
-
-    // (verbatim) RecoilProperties
-    namespace RecoilProperties
-    {
-        inline constexpr uintptr_t recoilYawMin                     = 0x18; // offset
-        inline constexpr uintptr_t recoilYawMax                     = 0x1C; // offset
-        inline constexpr uintptr_t recoilPitchMin                   = 0x20; // offset
-        inline constexpr uintptr_t recoilPitchMax                   = 0x24; // offset
-        inline constexpr uintptr_t timeToTakeMin                    = 0x28; // offset
-        inline constexpr uintptr_t timeToTakeMax                    = 0x2C; // offset
-        inline constexpr uintptr_t ADSScale                         = 0x30; // offset
-        inline constexpr uintptr_t movementPenalty                  = 0x34; // offset
-        inline constexpr uintptr_t clampPitch                       = 0x38; // offset
-        inline constexpr uintptr_t pitchCurve                       = 0x40; // offset
-        inline constexpr uintptr_t yawCurve                         = 0x48; // offset
-        inline constexpr uintptr_t ammoAimconeScaleMultiProjectile  = 0x78; // offset
-        inline constexpr uintptr_t ammoAimconeScaleSingleProjectile = 0x7C; // offset
-        inline constexpr uintptr_t newRecoilOverride                = 0x80; // offset
-        inline constexpr uintptr_t overrideAimconeWithCurve         = 0x5C; // offset
-        inline constexpr uintptr_t aimconeProbabilityCurve          = 0x70; // offset
-        inline constexpr uintptr_t aimconeCurveScale                = 0x60; // offset
-    }
-
-    // (verbatim) FlintStrikeWeapon
-    namespace FlintStrikeWeapon
-    {
-        inline constexpr uintptr_t successFraction                  = 0x4A8; // offset
-        inline constexpr uintptr_t strikeRecoil                     = 0x4B0; // offset
-        inline constexpr uintptr_t _didSparkThisFrame               = 0x4B8; // offset
-    }
-
-    // (verbatim) PlayerEyes
-    namespace PlayerEyes
-    {
-        inline constexpr uintptr_t viewOffset                       = 0x40; // offset
-        inline constexpr uintptr_t bodyRotation                     = 0x50; // offset
-        inline constexpr uintptr_t worldPosition                    = 0x60; // offset
-    }
-
-    // (verbatim) PlayerInput
-    namespace PlayerInput
-    {
-        inline constexpr uintptr_t state                            = 0x28; // offset
-        inline constexpr uintptr_t bodyAngles                       = 0x44; // offset
-        inline constexpr uintptr_t yaw                              = 0x60; // offset
-    }
-
-    // (verbatim) PlayerModel
-    namespace PlayerModel
-    {
-        inline constexpr uintptr_t _multiMesh                       = 0x3B8; // offset
-        inline constexpr uintptr_t collision                        = 0xD0; // offset
-        inline constexpr uintptr_t fullMask                         = 0x208; // offset
-        inline constexpr uintptr_t newVelocity                      = 0x31C; // offset
-        inline constexpr uintptr_t isNpc                            = 0x490; // offset
-        inline constexpr uintptr_t visibleNullable                  = 0xC4; // offset
-    }
-
-    // (verbatim) SkinnedMultiMesh
-    namespace SkinnedMultiMesh
-    {
-        inline constexpr uintptr_t RendererList                     = 0x50; // offset
-        inline constexpr uintptr_t Renderers                        = 0x50; // offset
-    }
-
     // (verbatim) chams
     namespace chams
     {
@@ -699,73 +944,11 @@ namespace offsets
         inline constexpr uintptr_t multi_mesh_renderer_list         = 0x50; // offset
     }
 
-    // (verbatim) PlayerInventory
-    namespace PlayerInventory
-    {
-        inline constexpr uintptr_t loot                             = 0x48; // offset
-        inline constexpr uintptr_t containerBelt                    = 0x28; // offset
-        inline constexpr uintptr_t containerMain                    = 0x38; // offset
-        inline constexpr uintptr_t containerWear                    = 0x58; // offset
-    }
-
     // (verbatim) movement
     namespace movement
     {
         inline constexpr uintptr_t adminCheat                       = 0x20; // offset
         inline constexpr uintptr_t Owner                            = 0x28; // offset
-    }
-
-    // (verbatim) PlayerWalkMovement
-    namespace PlayerWalkMovement
-    {
-        inline constexpr uintptr_t zeroFrictionMaterial             = 0x60; // offset
-        inline constexpr uintptr_t highFrictionMaterial             = 0x68; // offset
-        inline constexpr uintptr_t capsuleHeight                    = 0x70; // offset
-        inline constexpr uintptr_t capsuleCenter                    = 0x78; // offset
-        inline constexpr uintptr_t capsuleHeightDucked              = 0x80; // offset
-        inline constexpr uintptr_t capsuleCenterDucked              = 0x88; // offset
-        inline constexpr uintptr_t capsuleRadius                    = 0x90; // offset
-        inline constexpr uintptr_t gravityTestRadius                = 0x98; // offset
-        inline constexpr uintptr_t gravityMultiplier                = 0xA8; // offset
-        inline constexpr uintptr_t gravityMultiplierSwimming        = 0xB0; // offset
-        inline constexpr uintptr_t maxAngleWalking                  = 0xB8; // offset
-        inline constexpr uintptr_t maxAngleClimbing                 = 0xC0; // offset
-        inline constexpr uintptr_t maxAngleSliding                  = 0xC8; // offset
-        inline constexpr uintptr_t ladder                           = 0xD8; // offset
-        inline constexpr uintptr_t collisionDetectionMode           = 0xE0; // offset
-        inline constexpr uintptr_t body                             = 0xE8; // offset
-        inline constexpr uintptr_t capsule                          = 0xF0; // offset
-        inline constexpr uintptr_t maxVelocity                      = 0xF8; // offset
-        inline constexpr uintptr_t groundAngle                      = 0x100; // offset
-        inline constexpr uintptr_t groundAngleNew                   = 0x108; // offset
-        inline constexpr uintptr_t groundTime                       = 0x110; // offset
-        inline constexpr uintptr_t jumpTime                         = 0x118; // offset
-        inline constexpr uintptr_t landTime                         = 0x120; // offset
-        inline constexpr uintptr_t velocity                         = 0x128; // offset
-        inline constexpr uintptr_t groundNormal                     = 0x138; // offset
-        inline constexpr uintptr_t groundNormalNew                  = 0x148; // offset
-        inline constexpr uintptr_t nextSprintTime                   = 0x198; // offset
-        inline constexpr uintptr_t lastSprintTime                   = 0x1A0; // offset
-        inline constexpr uintptr_t sprintForced                     = 0x1A8; // offset
-        inline constexpr uintptr_t modify                           = 0x1B8; // offset
-        inline constexpr uintptr_t grounded                         = 0x1BC; // offset
-        inline constexpr uintptr_t wasGrounded                      = 0x1C4; // offset
-        inline constexpr uintptr_t climbing                         = 0x1CC; // offset
-        inline constexpr uintptr_t wasClimbing                      = 0x1D4; // offset
-        inline constexpr uintptr_t sliding                          = 0x1DC; // offset
-        inline constexpr uintptr_t wasSliding                       = 0x1E4; // offset
-        inline constexpr uintptr_t swimming                         = 0x1EC; // offset
-        inline constexpr uintptr_t wasSwimming                      = 0x1F4; // offset
-        inline constexpr uintptr_t jumping                          = 0x1FC; // offset
-        inline constexpr uintptr_t flying                           = 0x204; // offset
-        inline constexpr uintptr_t falling                          = 0x20C; // offset
-    }
-
-    // (verbatim) WorldItem
-    namespace WorldItem
-    {
-        inline constexpr uintptr_t item                             = 0x1F8; // offset
-        inline constexpr uintptr_t allowPickup                      = 0x1F0; // offset
     }
 
     // (verbatim) mapview
@@ -784,18 +967,6 @@ namespace offsets
         inline constexpr uintptr_t RawImage_UVRect                  = 0xE8; // offset
         inline constexpr uintptr_t SR_ContentBounds                 = 0x90; // offset
         inline constexpr uintptr_t SR_ViewBounds                    = 0xA8; // offset
-    }
-
-    // (verbatim) AutoTurret
-    namespace AutoTurret
-    {
-        inline constexpr uintptr_t authorizedPlayers                = 0x418; // offset
-        inline constexpr uintptr_t muzzlePos                        = 0x4A0; // offset
-        inline constexpr uintptr_t gun_yaw                          = 0x4B8; // offset
-        inline constexpr uintptr_t lastYaw                          = 0x430; // offset
-        inline constexpr uintptr_t lastYawRotation                  = 0x430; // offset
-        inline constexpr uintptr_t gun_pitch                        = 0x4C0; // offset
-        inline constexpr uintptr_t sightRange                       = 0x4C8; // offset
     }
 
     // (verbatim) patrolhelicopter
@@ -871,147 +1042,15 @@ namespace offsets
         inline constexpr uintptr_t trigger                          = 0x3D8; // offset
     }
 
-    // (verbatim) BaseLauncher
-    namespace BaseLauncher
-    {
-        inline constexpr uintptr_t initialSpeedMultiplier           = 0x4A8; // offset
-    }
-
-    // (verbatim) StorageContainer
-    namespace StorageContainer
-    {
-        inline constexpr uintptr_t inventorySlots                   = 0x310; // offset
-        inline constexpr uintptr_t panelName                        = 0x320; // offset
-        inline constexpr uintptr_t panelTitle                       = 0x328; // offset
-        inline constexpr uintptr_t isLootable                       = 0x31D; // offset
-        inline constexpr uintptr_t isLockable                       = 0x31E; // offset
-        inline constexpr uintptr_t isMonitorable                    = 0x31F; // offset
-        inline constexpr uintptr_t dropsLoot                        = 0x314; // offset
-        inline constexpr uintptr_t dropLootDestroyPercent           = 0x318; // offset
-        inline constexpr uintptr_t allowedContents                  = 0x330; // offset
-        inline constexpr uintptr_t allowedItem                      = 0x338; // offset
-        inline constexpr uintptr_t maxStackSize                     = 0x358; // offset
-        inline constexpr uintptr_t needsBuildingPrivilegeToUse      = 0x35C; // offset
-        inline constexpr uintptr_t onlyAcceptCategory               = 0x388; // offset
-        inline constexpr uintptr_t onlyOneUser                      = 0x38C; // offset
-        inline constexpr uintptr_t dropPosition                     = 0x370; // offset
-        inline constexpr uintptr_t dropVelocity                     = 0x37C; // offset
-    }
-
-    // (verbatim) LootContainer
-    namespace LootContainer
-    {
-        inline constexpr uintptr_t destroyOnEmpty                   = 0x398; // offset
-        inline constexpr uintptr_t lootDefinition                   = 0x3A0; // offset
-        inline constexpr uintptr_t maxDefinitionsToSpawn            = 0x3A8; // offset
-        inline constexpr uintptr_t minSecondsBetweenRefresh         = 0x3AC; // offset
-        inline constexpr uintptr_t maxSecondsBetweenRefresh         = 0x3B0; // offset
-        inline constexpr uintptr_t initialLootSpawn                 = 0x3B4; // offset
-        inline constexpr uintptr_t xpLootedScale                    = 0x3B8; // offset
-        inline constexpr uintptr_t scrapAmount                      = 0x3C4; // offset
-        inline constexpr uintptr_t LootSpawnSlots                   = 0x3D0; // offset
-        inline constexpr uintptr_t SpawnType                        = 0x3D8; // offset
-        inline constexpr uintptr_t clanScoreEventForFirstLooter     = 0x3DC; // offset
-    }
-
-    // (verbatim) OreResourceEntity
-    namespace OreResourceEntity
-    {
-        inline constexpr uintptr_t bonusPrefab                      = 0x248; // offset
-        inline constexpr uintptr_t finishEffect                     = 0x250; // offset
-        inline constexpr uintptr_t bonusFailEffect                  = 0x258; // offset
-        inline constexpr uintptr_t useHotspotMinigame               = 0x260; // offset
-        inline constexpr uintptr_t bonusSound                       = 0x268; // offset
-        inline constexpr uintptr_t heightOffset                     = 0x270; // offset
-    }
-
-    // (verbatim) ResourceEntity
-    namespace ResourceEntity
-    {
-        inline constexpr uintptr_t startHealth                      = 0x1F0; // offset
-        inline constexpr uintptr_t baseProtection                   = 0x1F8; // offset
-        inline constexpr uintptr_t skipDecorComponents              = 0x204; // offset
-    }
-
-    // (verbatim) CollectibleEntity
-    namespace CollectibleEntity
-    {
-        inline constexpr uintptr_t itemName                         = 0x1F0; // offset
-        inline constexpr uintptr_t itemList                         = 0x1F8; // offset
-        inline constexpr uintptr_t pickupEffect                     = 0x200; // offset
-        inline constexpr uintptr_t xpScale                          = 0x208; // offset
-        inline constexpr uintptr_t suppressGatherRateMultiplier     = 0x20C; // offset
-    }
-
-    // (verbatim) GrowableEntity
-    namespace GrowableEntity
-    {
-        inline constexpr uintptr_t Properties                       = 0x338; // offset
-        inline constexpr uintptr_t SourceItemDef                    = 0x340; // offset
-        inline constexpr uintptr_t state                            = 0x348; // offset
-        inline constexpr uintptr_t plantSkin                        = 0x2D8; // offset
-    }
-
-    // (verbatim) PlayerCorpse
-    namespace PlayerCorpse
-    {
-        inline constexpr uintptr_t playerName                       = 0x310; // offset
-        inline constexpr uintptr_t playerSteamID                    = 0x308; // offset
-        inline constexpr uintptr_t clientClothing                   = 0x340; // offset
-    }
-
-    // (verbatim) LootableCorpse
-    namespace LootableCorpse
-    {
-        inline constexpr uintptr_t playerSteamID                    = 0x308; // offset
-        inline constexpr uintptr_t _playerName                      = 0x310; // offset
-    }
-
-    // (verbatim) HackableLockedCrate
-    namespace HackableLockedCrate
-    {
-        inline constexpr uintptr_t hackSeconds                      = 0x400; // offset
-        inline constexpr uintptr_t timerText                        = 0x3F0; // offset
-    }
-
-    // (verbatim) HeldEntity
-    namespace HeldEntity
-    {
-        inline constexpr uintptr_t viewModel                        = 0x2C8; // offset
-        inline constexpr uintptr_t worldModelAnimation              = 0x208; // offset
-        inline constexpr uintptr_t handBone                         = 0x250; // offset
-        inline constexpr uintptr_t holdInfo                         = 0x260; // offset
-        inline constexpr uintptr_t isBuildingTool                   = 0x27C; // offset
-        inline constexpr uintptr_t forcedOwner                      = 0x280; // offset
-        inline constexpr uintptr_t hostileScore                     = 0x29C; // offset
-        inline constexpr uintptr_t itemOwner                        = 0x1F0; // offset
-        inline constexpr uintptr_t ownerItemUID                     = 0x2D0; // offset
-        inline constexpr uintptr_t viewModel_wrapper_kind           = 0x4; // offset
-        inline constexpr uintptr_t viewModel_inner_off              = 0x28; // offset
-        inline constexpr uintptr_t _punches                         = 0x240; // offset
-    }
-
-    // (verbatim) ItemIcon
-    namespace ItemIcon
-    {
-        inline constexpr uintptr_t item_icon_c                      = 0xFC0CFA0; // offset
-        inline constexpr uintptr_t type_info                        = 0xFC0CFA0; // offset
-        inline constexpr uintptr_t static_fields                    = 0xB8; // offset
-        inline constexpr uintptr_t containerLootStartTimes          = 0x0; // offset
-        inline constexpr uintptr_t TryToMove                        = 0x0; // offset
-        inline constexpr uintptr_t RunTimedAction                   = 0x0; // offset
-        inline constexpr uintptr_t backgroundImage                  = 0xE8; // offset
-    }
-
-    // (verbatim) Dictionary
-    namespace Dictionary
+    // (verbatim) dictionary
+    namespace dictionary
     {
         inline constexpr uintptr_t entries                          = 0x18; // offset
         inline constexpr uintptr_t count                            = 0x20; // offset
     }
 
-    // (verbatim) DictionaryEntryArray
-    namespace DictionaryEntryArray
+    // (verbatim) dictionary_entry_array
+    namespace dictionary_entry_array
     {
         inline constexpr uintptr_t length                           = 0x18; // offset
         inline constexpr uintptr_t data                             = 0x20; // offset
@@ -1021,26 +1060,8 @@ namespace offsets
         inline constexpr uintptr_t stride                           = 0x18; // offset
     }
 
-    // (verbatim) ViewModel
-    namespace ViewModel
-    {
-        inline constexpr uintptr_t instance                         = 0x28; // offset
-        inline constexpr uintptr_t viewmodel_instance               = 0x28; // offset
-    }
-
-    // (verbatim) BaseViewModel
-    namespace BaseViewModel
-    {
-        inline constexpr uintptr_t useViewModelCamera               = 0x40; // offset
-        inline constexpr uintptr_t model                            = 0xC0; // offset
-        inline constexpr uintptr_t bob                              = 0x108; // offset
-        inline constexpr uintptr_t lower                            = 0xA0; // offset
-        inline constexpr uintptr_t sway                             = 0x100; // offset
-        inline constexpr uintptr_t ironSights                       = 0xB0; // offset
-    }
-
-    // (verbatim) EffectNetwork
-    namespace EffectNetwork
+    // (verbatim) effect_network
+    namespace effect_network
     {
         inline constexpr uintptr_t type_info                        = 0x100DD1F0; // offset
         inline constexpr uintptr_t static_type_info                 = 0xFC83208; // offset
@@ -1056,8 +1077,8 @@ namespace offsets
         inline constexpr uintptr_t SingletonComponent_MixerSnapshotManager = 0xFC14FA0; // offset
     }
 
-    // (verbatim) TOD_Sky_Static
-    namespace TOD_Sky_Static
+    // (verbatim) tod_sky_static
+    namespace tod_sky_static
     {
         inline constexpr uintptr_t tod_sky_c                        = 0xFC45770; // offset
         inline constexpr uintptr_t static_fields                    = 0xB8; // offset
@@ -1066,15 +1087,6 @@ namespace offsets
         inline constexpr uintptr_t listItems                        = 0x10; // offset
         inline constexpr uintptr_t listSize                         = 0x18; // offset
         inline constexpr uintptr_t arrayData                        = 0x20; // offset
-    }
-
-    // (verbatim) TOD_CycleParameters
-    namespace TOD_CycleParameters
-    {
-        inline constexpr uintptr_t Hour                             = 0x10; // offset
-        inline constexpr uintptr_t Day                              = 0x14; // offset
-        inline constexpr uintptr_t Month                            = 0x18; // offset
-        inline constexpr uintptr_t Year                             = 0x1C; // offset
     }
 
     // (verbatim) unity_transform_native
