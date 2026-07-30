@@ -13,56 +13,6 @@ namespace offsets
 {
     inline constexpr uintptr_t il2cpp_handle = 0x0;
 
-    // ─── PE header + IL2CPP runtime API RVAs ───────────────────────────
-
-    namespace GameAssembly
-    {
-        inline constexpr uintptr_t timestamp = 0x6A6A3C20;
-        inline constexpr uintptr_t il2cpp_domain_get                          = 0x846AA0;
-        inline constexpr uintptr_t il2cpp_domain_get_assemblies               = 0x846AC0;
-        inline constexpr uintptr_t il2cpp_domain_assembly_open                = 0x846AB0;
-        inline constexpr uintptr_t il2cpp_assembly_get_image                  = 0x4470;
-        inline constexpr uintptr_t il2cpp_image_get_class_count               = 0x2C80;
-        inline constexpr uintptr_t il2cpp_image_get_class                     = 0x848F20;
-        inline constexpr uintptr_t il2cpp_class_from_name                     = 0x82FF70;
-        inline constexpr uintptr_t il2cpp_class_from_il2cpp_type              = 0x845E80;
-        inline constexpr uintptr_t il2cpp_class_get_methods                   = 0x8460F0;
-        inline constexpr uintptr_t il2cpp_class_get_method_from_name          = 0x846180;
-        inline constexpr uintptr_t il2cpp_class_get_fields                    = 0x845EA0;
-        inline constexpr uintptr_t il2cpp_class_get_nested_types              = 0x845F20;
-        inline constexpr uintptr_t il2cpp_class_get_type                      = 0x71B6B0;
-        inline constexpr uintptr_t il2cpp_class_get_name                      = 0xC7B0;
-        inline constexpr uintptr_t il2cpp_class_get_namespace                 = 0xC780;
-        inline constexpr uintptr_t il2cpp_class_get_parent                    = 0x25F20;
-        inline constexpr uintptr_t il2cpp_class_get_image                     = 0x4470;
-        inline constexpr uintptr_t il2cpp_class_get_flags                     = 0x8461D0;
-        inline constexpr uintptr_t il2cpp_class_get_static_field_data         = 0x2A30;
-        inline constexpr uintptr_t il2cpp_type_get_object                     = 0x848C40;
-        inline constexpr uintptr_t il2cpp_type_get_class_or_element_class     = 0x848C60;
-        inline constexpr uintptr_t il2cpp_type_get_name                       = 0x848C90;
-        inline constexpr uintptr_t il2cpp_type_get_attrs                      = 0x848EB0;
-        inline constexpr uintptr_t il2cpp_method_get_param_count              = 0x847740;
-        inline constexpr uintptr_t il2cpp_method_get_name                     = 0xC780;
-        inline constexpr uintptr_t il2cpp_method_get_param                    = 0x847750;
-        inline constexpr uintptr_t il2cpp_method_get_return_type              = 0xC7D0;
-        inline constexpr uintptr_t il2cpp_method_get_class                    = 0xC7A0;
-        inline constexpr uintptr_t il2cpp_method_get_flags                    = 0x847800;
-        inline constexpr uintptr_t il2cpp_field_get_offset                    = 0x7D5BF0;
-        inline constexpr uintptr_t il2cpp_field_get_type                      = 0x440E40;
-        inline constexpr uintptr_t il2cpp_field_get_parent                    = 0xC7B0;
-        inline constexpr uintptr_t il2cpp_field_get_name                      = 0x4470;
-        inline constexpr uintptr_t il2cpp_field_get_flags                     = 0x846D40;
-        inline constexpr uintptr_t il2cpp_field_static_get_value              = 0x846EA0;
-        inline constexpr uintptr_t il2cpp_object_get_class                    = 0x4470;
-        inline constexpr uintptr_t il2cpp_object_new                          = 0x847B10;
-        inline constexpr uintptr_t il2cpp_string_new                          = 0x847C30;
-        inline constexpr uintptr_t il2cpp_array_new                           = 0x845D80;
-        inline constexpr uintptr_t il2cpp_resolve_icall                       = 0x845D60;
-        inline constexpr uintptr_t il2cpp_gchandle_get_target                 = 0x8471D0;
-        inline constexpr uintptr_t il2cpp_gchandle_new                        = 0x847180;
-        inline constexpr uintptr_t il2cpp_gchandle_free                       = 0x847270;
-    }
-
     // ─── IL2CPP runtime layout constants (x64, Unity 2020.2+) ───────────
 
     namespace il2cpp_class
