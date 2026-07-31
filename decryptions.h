@@ -20,33 +20,6 @@ namespace decryption
         return ( type > 1 ) ? entry : ~entry;
     }
 
-    namespace _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1
-    {
-        inline uintptr_t _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1__89f5e67e4dcddcaf6b8fc87fd42e72a92737e1d0( memify& mem, uintptr_t a1 )
-        {
-            uint64_t rax = mem.Read<uint64_t>( a1 + 0x18 );
-
-            uint64_t rdx = 0;
-            rdx = rax + 0x1;
-            rax = (rax & 0xFFFFFFFF00000000ULL) | (uint64_t)rdx;
-
-            return static_cast<uintptr_t>( rax );
-        }
-
-        constexpr auto& _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1__772773f547efad6064f6a694d403a8b6649a23d3 = _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1__89f5e67e4dcddcaf6b8fc87fd42e72a92737e1d0;
-
-        constexpr auto& _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1_c67c23116cfc5fbb5798b600d7b784b09ed4b9c3 = _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1__89f5e67e4dcddcaf6b8fc87fd42e72a92737e1d0;
-
-        constexpr auto& _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1_c796bc9ac37d31af61433668a03ce648a4a5a7ec = _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1__89f5e67e4dcddcaf6b8fc87fd42e72a92737e1d0;
-
-        constexpr auto& _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1_c091c9d446dcddb4f6df781b36fb3a828285d311 = _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1__89f5e67e4dcddcaf6b8fc87fd42e72a92737e1d0;
-
-        constexpr auto& _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1__21a1feb7ee219f60973573545139da5fc3d75ffb = _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1__89f5e67e4dcddcaf6b8fc87fd42e72a92737e1d0;
-
-        constexpr auto& _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1_c9fff85057ef35dea1b0b82f74cf5742c82fa795 = _54466d6d043cd15db1b0a2f9d4db1c6307dedcc1__89f5e67e4dcddcaf6b8fc87fd42e72a92737e1d0;
-
-    }
-
     namespace burst_string_t_float_union64
     {
         inline uintptr_t burst_string_t_float_union64_get_exponent( memify& mem, uintptr_t a1 )
