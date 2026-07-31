@@ -20,6 +20,105 @@ namespace decryption
         return ( type > 1 ) ? entry : ~entry;
     }
 
+    inline uintptr_t base_networkable( memify& mem, uintptr_t a1 )
+    {
+        uintptr_t rax = mem.Read<uintptr_t>( a1 + 0x18 );
+        uint32_t* p   = reinterpret_cast<uint32_t*>( &rax );
+        for ( uint32_t i = 0; i < 2; ++i )
+        {
+            uint32_t eax = p[ i ];
+            eax += 0xB97F1AE1;
+            uint32_t ecx = eax;
+            eax <<= 0x1D;
+            ecx >>= 0x03;
+            ecx |= eax;
+            ecx += 0x32BEE2A5;
+            ecx ^= 0xE58A30D8;
+            p[ i ] = ecx;
+        }
+        return il2cpp_get_handle( mem, rax );
+    }
+
+    inline uintptr_t entity_list( memify& mem, uintptr_t a1 )
+    {
+        uintptr_t rax = mem.Read<uintptr_t>( a1 + 0x18 );
+        uint32_t* p   = reinterpret_cast<uint32_t*>( &rax );
+        for ( uint32_t i = 0; i < 2; ++i )
+        {
+            uint32_t ecx = p[ i ];
+            uint32_t eax = p[ i ];
+            eax <<= 0x0A;
+            ecx >>= 0x16;
+            ecx |= eax;
+            ecx ^= 0xF6BF245D;
+            eax  = ecx;
+            ecx <<= 0x0F;
+            eax >>= 0x11;
+            eax |= ecx;
+            eax ^= 0x9BBD4311;
+            p[ i ] = eax;
+        }
+        return il2cpp_get_handle( mem, rax );
+    }
+
+    inline uintptr_t player_inventory( memify& mem, uintptr_t a1 )
+    {
+        uintptr_t rax = mem.Read<uintptr_t>( a1 + 0x18 );
+        uint32_t* p   = reinterpret_cast<uint32_t*>( &rax );
+        for ( uint32_t i = 0; i < 2; ++i )
+        {
+            uint32_t eax = p[ i ];
+            eax += 0x482D6B3D;
+            uint32_t ecx = eax;
+            eax += eax;
+            ecx >>= 0x1F;
+            ecx |= eax;
+            ecx += 0x08805855;
+            eax  = ecx;
+            ecx <<= 0x1F;
+            eax >>= 0x01;
+            eax |= ecx;
+            p[ i ] = eax;
+        }
+        return il2cpp_get_handle( mem, rax );
+    }
+
+    inline uintptr_t player_eyes( memify& mem, uintptr_t a1 )
+    {
+        uintptr_t rax = mem.Read<uintptr_t>( a1 + 0x18 );
+        uint32_t* p   = reinterpret_cast<uint32_t*>( &rax );
+        for ( uint32_t i = 0; i < 2; ++i )
+        {
+            uint32_t ecx = p[ i ];
+            uint32_t eax = p[ i ];
+            ecx >>= 0x06;
+            eax <<= 0x1A;
+            ecx |= eax;
+            ecx ^= 0x441ADFFD;
+            ecx -= 0x426353FC;
+            p[ i ] = ecx;
+        }
+        return il2cpp_get_handle( mem, rax );
+    }
+
+    inline uint64_t cl_active_item( uint64_t a1 )
+    {
+        uint64_t  val = a1;
+        uint32_t* p   = reinterpret_cast<uint32_t*>( &val );
+        for ( uint32_t i = 0; i < 2; ++i )
+        {
+            uint32_t edx = p[ i ];
+            uint32_t eax = p[ i ];
+            edx >>= 0x02;
+            eax <<= 0x1E;
+            edx |= eax;
+            edx ^= 0x4ED09CE6;
+            edx -= 0x2521E783;
+            p[ i ] = edx;
+        }
+        return val;
+    }
+
     namespace burst_string_t_float_union64
     {
         inline uintptr_t burst_string_t_float_union64_get_exponent( memify& mem, uintptr_t a1 )

@@ -16,7 +16,6 @@ namespace offsets
     namespace skinned_multi_mesh
     {
         inline constexpr uintptr_t RendererList                     = 0x50;
-        inline constexpr uintptr_t renderer_list                    = 0x58;
     }
 
     namespace base_combat_entity
@@ -40,15 +39,12 @@ namespace offsets
     {
         inline constexpr uintptr_t allowPickup                      = 0x1F0;
         inline constexpr uintptr_t item                             = 0x1F8;
-        inline constexpr uintptr_t allow_pickup                     = 0x1E8;
     }
 
     namespace player_eyes
     {
         inline constexpr uintptr_t viewOffset                       = 0x40;
         inline constexpr uintptr_t bodyRotation                     = 0x50;
-        inline constexpr uintptr_t view_offset                      = 0x40;
-        inline constexpr uintptr_t body_rotation                    = 0x50;
         inline constexpr uintptr_t unk_quaternion                   = 0x6C;
     }
 
@@ -57,9 +53,6 @@ namespace offsets
         inline constexpr uintptr_t rootBone                         = 0x28;
         inline constexpr uintptr_t headBone                         = 0x30;
         inline constexpr uintptr_t boneTransforms                   = 0x50;
-        inline constexpr uintptr_t root_bone                        = 0x28;
-        inline constexpr uintptr_t head_bone                        = 0x30;
-        inline constexpr uintptr_t bone_transforms                  = 0x50;
     }
 
     namespace player_inventory
@@ -83,21 +76,14 @@ namespace offsets
         inline constexpr uintptr_t clActiveItem                     = 0x568;
         inline constexpr uintptr_t playerFlags                      = 0x6B8;
         inline constexpr uintptr_t player_input                     = 0x728;
-        inline constexpr uintptr_t player_inventory                 = 0x4D0;
-        inline constexpr uintptr_t current_team                     = 0x538;
         inline constexpr uintptr_t active_item                      = 0x568;
-        inline constexpr uintptr_t cl_active_item                   = active_item;
-        inline constexpr uintptr_t player_eyes                      = 0x5F8;
-        inline constexpr uintptr_t player_flags                     = 0x6B8;
         inline constexpr uintptr_t base_movement                    = 0x308;
-        inline constexpr uintptr_t model_state                      = 0x378;
         inline constexpr uintptr_t steam_id                         = 0x408;
     }
 
     namespace player_input
     {
         inline constexpr uintptr_t bodyAngles                       = 0x44;
-        inline constexpr uintptr_t body_angles                      = 0x44;
     }
 
     namespace recoil_properties
@@ -111,11 +97,6 @@ namespace offsets
         inline constexpr uintptr_t yaw_max                          = 0x1C;
         inline constexpr uintptr_t pitch_min                        = 0x20;
         inline constexpr uintptr_t pitch_max                        = 0x24;
-        inline constexpr uintptr_t clamp_pitch                      = 0x38;
-        inline constexpr uintptr_t pitch_curve                      = 0x40;
-        inline constexpr uintptr_t yaw_curve                        = 0x48;
-        inline constexpr uintptr_t use_curves                       = 0x50;
-        inline constexpr uintptr_t new_recoil_override              = 0x80;
         inline constexpr uintptr_t time_min                         = 0x28;
         inline constexpr uintptr_t time_max                         = 0x2C;
         inline constexpr uintptr_t ads_scale                        = 0x30;
@@ -140,15 +121,6 @@ namespace offsets
         inline constexpr uintptr_t aimCone                          = 0x400;
         inline constexpr uintptr_t hipAimCone                       = 0x404;
         inline constexpr uintptr_t numShotsFired                    = 0x43C;
-        inline constexpr uintptr_t damage_scale                     = 0x374;
-        inline constexpr uintptr_t muzzle_point                     = 0x3B8;
-        inline constexpr uintptr_t reload_time                      = 0x3C0;
-        inline constexpr uintptr_t primary_magazine                 = 0x3C8;
-        inline constexpr uintptr_t aim_sway                         = 0x3E8;
-        inline constexpr uintptr_t aim_sway_speed                   = 0x3EC;
-        inline constexpr uintptr_t aim_cone                         = 0x400;
-        inline constexpr uintptr_t hip_aim_cone                     = 0x404;
-        inline constexpr uintptr_t num_shots_fired                  = 0x43C;
         inline constexpr uintptr_t projectile_vel_scale             = damage_scale;
     }
 
@@ -164,8 +136,6 @@ namespace offsets
     {
         inline constexpr uintptr_t viewmodelType                    = 0x50;
         inline constexpr uintptr_t MuzzlePoint                      = 0x58;
-        inline constexpr uintptr_t viewmodel_type                   = 0x50;
-        inline constexpr uintptr_t muzzle_point                     = 0x58;
         inline constexpr uintptr_t list                             = 0x90;
         inline constexpr uintptr_t animation_events                 = 0xE0;
         inline constexpr uintptr_t viewmodel_lower                  = viewmodel_type;
@@ -180,8 +150,6 @@ namespace offsets
         inline constexpr uintptr_t ItemModWearable                  = 0x1A8;
         inline constexpr uintptr_t short_name                       = 0x28;
         inline constexpr uintptr_t item_display_english             = 0x20;
-        inline constexpr uintptr_t display_name                     = 0x40;
-        inline constexpr uintptr_t item_mod_wearable                = 0x168;
         inline constexpr uintptr_t item_id                          = 0x40;
     }
 
